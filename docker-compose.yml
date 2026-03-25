@@ -9,4 +9,8 @@ services:
     volumes:
       - ./app:/code/app
       - ./templates:/code/templates
-    restart: always
+    restart_policy:
+        condition: on-failure
+        max_attempts: 5  # Change this to your desired constant number
+        delay: 5s       # Optional: time to wait between restart attempts
+        window: 120s    # Optional: how long to wait before deciding if a restart was successful
