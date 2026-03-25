@@ -1,7 +1,3 @@
-This README is designed to be a "plug-and-play" guide for anyone (including future you) who needs to get this app running on a new machine.
-
------
-
 # 🚀 FastAPI Docker Application
 
 This project is a containerized FastAPI application. It uses **Docker** to ensure the environment is consistent and **Docker Compose** to manage environment variables and local development volumes.
@@ -81,7 +77,7 @@ docker exec fastapi_app printenv OPENAI_API_KEY
 .
 ├── app/                # FastAPI Python code
 ├── templates/          # HTML templates
-├── .env                # Secret keys (Do not commit!)
+├── .env                # Secret keys
 ├── Dockerfile          # Image build instructions
 ├── docker-compose.yml  # Service orchestration
 └── requirements.txt    # Python dependencies
