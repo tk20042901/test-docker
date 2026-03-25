@@ -85,7 +85,6 @@ pygments==2.19.2
     # via rich
 python-dotenv==1.2.2
     # via
-    #   test-docker (pyproject.toml)
     #   pydantic-settings
     #   uvicorn
 python-multipart==0.0.22
