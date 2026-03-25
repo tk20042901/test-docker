@@ -1,11 +1,9 @@
 import os
-from dotenv import load_dotenv
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from openai import OpenAI
 
-load_dotenv()
 
 # Khởi tạo app 1 lần duy nhất
 app = FastAPI()
